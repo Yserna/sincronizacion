@@ -1,0 +1,32 @@
+Consulte el uso de la función gettimeofday para medir el tiempo de ejecución de un programa
+¿Cómo se utiliza esta función?
+
+Sintaxis:
+- int gettimeofday (struct timeval *tv, struct timezone *tz);
+- int gettimeofday (struct timeval *tp, NULL); 
+
+El argumento tv es una  estructura  timeval,  tal  como  se  especifica  en
+/usr/include/sys/time.h:
+
+struct timeval {
+        long    tv_sec;         /* segundos */
+        long    tv_usec;        /* microsegundos */
+};
+
+y da el númer de segundos y microsegundos desde la Época (véase time(2)).  El argumento tz
+es una estructura timezone :
+
+struct timezone {
+        int   tz_minuteswest; /* minutos al O de Greenwich */
+        int   tz_dsttime;     /* tipo de correción horaria invierno/verano */
+};
+
+El uso de la estructura de zona horaria es obsoleto en  Linux - no lo ha sido y nunca será soportado por libc o glibc. El argumento tz normalmente debería especificarse como NULL.
+Return: gettimeofday() devuelve 0 para el éxito, o -1 para el fracaso.
+Errores: EINVAL La zona horaria (o algo más) es inválida.
+         EFAULT Uno de tv o tz apuntaba afuera de su espacio de direcciones accesible.
+
+
+¿Cuál es el intervalo de tiempo más corto que se puede medir con esta función?
+
+- Al realizar la prueba con el código del ejemplo anterior, el intervalo mas corto fue de 0 microsegundos

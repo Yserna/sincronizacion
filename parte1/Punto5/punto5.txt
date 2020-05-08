@@ -1,0 +1,7 @@
+- ¿Los valores que usted obtuvo siguen una tendencia como la que se muestra en el texto guía (mostrada anteriormente)?
+
+    Sí, tal y como se observa en la gráfica, tanto la información para el contador preciso como para el contador aproximado siguen una tendencia similar a las respectivas gráficas del libro.
+
+- ¿Cuántas CPUs hay disponibles en el sistema que usted está utilizando?
+
+    El equipo cuenta con 4 CPUs disponibles

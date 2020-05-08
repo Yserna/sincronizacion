@@ -1,0 +1,3 @@
+¿La gráfica sigue una tendencia similar a la mostrada en la figura 29.6 del texto guía?
+
+Sí, tal y como se puede observar en la gráfica del laboratorio, el tiempo disminuye a medida que aumenta el Umbral y al final se va aplanando la curva, tal y como sucede con la gráfica del libro.
